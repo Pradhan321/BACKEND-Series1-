@@ -33,4 +33,13 @@ app.use(cookieParser())
 // and make them available in the requests
 
 
+//routes import
+import userRouter from "./routes/user.routes.js";
+
+
+//routes declaration
+app.use("/api/v1/users", userRouter)
+// here we are using the userRouter to handle all the requests that start with /users
+//http://localhost:3000/api/v1/users/register
+
 export {app}
