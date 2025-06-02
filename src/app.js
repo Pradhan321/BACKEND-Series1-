@@ -12,7 +12,7 @@ app.use(cors({
 // and also allowing credentials to be included in the requests
 // this is useful when we want to send cookies or authorization headers with the requests
 app.use(express.json({limit: "10kb" }))
-app.use(express.urlencoded({limit: "10kb", extended: true}))
+app.use(express.urlencoded({limit: "16kb", extended: true}))
 app.use(express.static("public"))
 app.use(cookieParser())
 // here we are using the cookie-parser middleware to parse cookies from the request headers
