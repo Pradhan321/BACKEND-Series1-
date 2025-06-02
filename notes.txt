@@ -1,0 +1,15 @@
+
+Difference between accessToken and refresh token?
+
+An access token is a short-lived credential used to authenticate a user for accessing protected resources. It's typically included in API requests to verify identity and permissions.
+
+
+A refresh token is a long-lived credential used to obtain new access tokens without requiring the user to log in again. It helps maintain session continuity by allowing access tokens to be refreshed when they expire.
+
+
+Key Difference:
+- Access Token: Short-lived, used for authentication in API requests.
+- Refresh Token: Long-lived, used to generate new access tokens when they expire.
+
+
+You likely use both when implementing JWT authentication, ensuring secure and efficient user management. Let me know if you need a more in-depth explanation or a practical example!
